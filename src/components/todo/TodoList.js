@@ -21,7 +21,7 @@ const TodoList = () => {
                 todoItems.map((item,i)=>{
                     return(
                         <tr key={i.toString()}>
-                        <th scope="row">{i}</th>
+                        <th scope="row">{i+1}</th>
                         <td>{item}</td>
                         <td><button className='btn btn-sm btn-info'>Edit</button></td>
                         <td><button className='btn btn-sm btn-danger'>Delete</button></td>
