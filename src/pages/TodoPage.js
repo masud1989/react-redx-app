@@ -1,4 +1,6 @@
 import React from 'react';
+import CreateTodo from '../components/todo/CreateTodo';
+import TodoList from '../components/todo/TodoList';
 
 const TodoPage = () => {
     return (
@@ -6,11 +8,13 @@ const TodoPage = () => {
             <div className='row bg-light'>
                 <div className='col-12'>
                     <div className='card'>
-                        <div className='card-body'>
-                            <div className='card-title'>
-                                <h4 className='card-title'>My Todo App</h4>
+                        <div className='card-header bg-secondary'>
+                                <h4 className='text-white'>My Todo App</h4>
                             </div>
-                        </div>
+                            <div className='card-body'>
+                                <CreateTodo/>
+                            </div>
+                            <TodoList/>
                     </div>
                 </div>
             </div>
